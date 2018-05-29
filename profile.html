@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#4188c9">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+  <!-- Generated: 2018-04-16 09:29:05 +0200 -->
+  <title>Profile - tabler.github.io - a responsive, flat and full featured admin template</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
+  <script src="./assets/js/require.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    requirejs.config({
+      baseUrl: '.'
+    });
+  </script>
+  <!-- Dashboard Core -->
+  <link href="./assets/css/dashboard.css" rel="stylesheet" />
+  <script src="./assets/js/dashboard.js"></script>
+  <!-- c3.js Charts Plugin -->
+  <link href="./assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
+  <script src="./assets/plugins/charts-c3/plugin.js"></script>
+  <!-- Google Maps Plugin -->
+  <link href="./assets/plugins/maps-google/plugin.css" rel="stylesheet" />
+  <script src="./assets/plugins/maps-google/plugin.js"></script>
+  <!-- Input Mask Plugin -->
+  <script src="./assets/plugins/input-mask/plugin.js"></script>
+  <script   src="index.js">
+  
+  </script>
+<!--  <script>
+             function editFunction() {
+
+               var person1 = prompt("Please enter your username");
+               var person2=prompt("you can change cover picture ");
+               var person3=prompt("you can change your user picture");
+               var person4=prompt("please enter your country ");
+               var person5=prompt("please enter your postal code");
+                                             
+               document.getElementById("#b1").innerHTML = "Hello World";
+             }
+  </script>  -->
+</head> 
+
+<body class="">
+  <div class="page">
+    <div class="page-main">
+      
+
+      <div class="my-3 my-md-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card card-profile">
+                <div id="p2"  class="card-header" style="background-image: url(demo/photos/eberhard-grossgasteiger-311213-500.jpg);"></div>
+                <div class="card-body text-center">
+                  <img id="p3"   class="card-profile-img" src="demo/faces/male/16.jpg">
+                  <h3  id="p1"  class="mb-3">Peter Richards</h3>
+                  <p id="p4"  class="mb-4">
+                    Big belly rude boy, million dollar hustler. Unemployed.
+                  </p>
+                  <button class="btn btn-outline-dark btn-sm">
+                    <span class="fa fa-twitter"></span> Follow
+                  </button>
+
+                  <a href="_empty.html" ><button class="btn btn-outline-primary">
+                    <span class="fa fa-twitter"></span> Know more about Peter
+                    </button>
+                   </a>
+
+                   <p>
+                    <button  id="b1" class="btn btn-success" onclick="showhide()"> Edit Profile</button>
+                  </p>
+
+                </div>
+              </div>
+              
+              </div> 
+              <div class="col-lg-8">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Message">
+                      <div class="input-group-append">
+                        <button type="button" class="btn btn-secondary">
+                          <i class="fe fe-camera"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--<div id="b2" class="bg-secondary text-white text-center"> -->
+                           <button  class="btn btn-dark" id="b2"  type="button"  onclick="newTweet()" >
+                             Add a new Tweet
+                           </button>
+                  
+
+                  
+                  <ul  id="whole"    class="list-group card-list-group">
+                    <li  id="li1"   class="list-group-item py-5">
+                      <div class="media">
+                        <div class="media-object avatar avatar-md mr-4" style="background-image: url(demo/faces/male/16.jpg)"></div>
+                        <div class="media-body">
+                          <div class="media-heading">
+                            <small class="float-right text-muted">4 min</small>
+                            <h5>Peter Richards</h5>
+                          </div>
+                          <div >
+                            Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac
+                            consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                            Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient
+                            montes, nascetur ridiculus mus.
+                          </div>
+                          <ul class="media-list">
+                            <li class="media mt-4">
+                              <div class="media-object avatar mr-4" style="background-image: url(demo/faces/female/17.jpg)"></div>
+                              <div class="media-body">
+                                <strong>Debra Beck: </strong>
+                                Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque
+                                nisl consectetur et. Sed posuere consectetur est at lobortis.
+                              </div>
+                            </li>
+                            <li class="media mt-4">
+                              <div class="media-object avatar mr-4" style="background-image: url(demo/faces/male/32.jpg)"></div>
+                              <div class="media-body">
+                                <strong>Jack Ruiz: </strong>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                                nibh, ut fermentum massa justo sit amet risus.
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li   id="p8"    class="list-group-item py-5">
+                      <div class="media">
+                        <div class="media-object avatar avatar-md mr-4" style="background-image: url(demo/faces/male/16.jpg)"></div>
+                        <div class="media-body">
+                          <div class="media-heading">
+                            <small class="float-right text-muted">12 min</small>
+                            <h5>Peter Richards</h5>
+                          </div>
+                          <div id="txt1" >
+                            Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum
+                            sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus,
+                            porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li  id="p7"   class="list-group-item py-5">
+                      <div class="media">
+                        <div class="media-object avatar avatar-md mr-4" style="background-image: url(demo/faces/male/16.jpg)"></div>
+                        <div class="media-body">
+                          <div class="media-heading">
+                            <small class="float-right text-muted">34 min</small>
+                            <h5>Peter Richards</h5>
+                          </div>
+                          <div>
+                            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam.
+                            Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis
+                            euismod. Donec sed odio dui.
+                          </div>
+                          <ul class="media-list">
+                            <li class="media mt-4">
+                              <div class="media-object avatar mr-4" style="background-image: url(demo/faces/male/26.jpg)"></div>
+                              <div class="media-body">
+                                <strong>Wayne Holland: </strong>
+                                Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque
+                                nisl consectetur et. Sed posuere consectetur est at lobortis.
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div> 
+
+
+                <div class="card"   style="visibility: hidden"  id="fm1">
+                  <div class="card-body">
+                    <h3 class="card-title">Edit Profile</h3>
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div class="form-group">
+                          <label class="form-label">Company</label>
+                          <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc.">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3">
+                        <div class="form-group">
+                          <label        class="form-label">Username</label>
+                          <input   id="e1"   type="text" class="form-control" placeholder="Username" value="michael23">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                        <div class="form-group">
+                          <label class="form-label">Email address</label>
+                          <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6">
+                        <div class="form-group">
+                          <label class="form-label">First Name</label>
+                          <input type="text" class="form-control" placeholder="Company" value="Chet">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6">
+                        <div class="form-group">
+                          <label class="form-label">Last Name</label>
+                          <input type="text" class="form-control" placeholder="Last Name" value="Faker">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="form-label">Address</label>
+                          <input type="text" class="form-control" placeholder="Home Address" value="Melbourne, Australia">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                        <div class="form-group">
+                          <label class="form-label">City</label>
+                          <input type="text" class="form-control" placeholder="City" value="Melbourne">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3">
+                        <div class="form-group">
+                          <label class="form-label">Postal Code</label>
+                          <input type="number" class="form-control" placeholder="ZIP Code">
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-group">
+                          <label class="form-label">Country</label>
+                          <select class="form-control custom-select">
+                            <option value="">Germany</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="form-label">Change Cover Pic</label>
+                          <input   id="e2"   type="link" class="form-control"  value="https://placeimg.com/500/333/any">
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="form-label">Change profile Pic</label>
+                          <input   id="e3"    type="link" class="form-control"  value="https://placeimg.com/128/128/people">
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group mb-0">
+                          <label     class="form-label">About Me</label>
+                          <textarea  id="e4"   rows="5" class="form-control" placeholder="Here can be your description" value="Mike">Oh so, your weak rhyme
+You doubt I'll bother, reading into it
+I'll probably won't, left to my own devices
+But that's the difference in our opinions.</textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button  class="btn btn-primary"     onclick="editFunction()">Update Profile</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="row">
+                <div class="col-6 col-md-3">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">First link</a>
+                    </li>
+                    <li>
+                      <a href="#">Second link</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Third link</a>
+                    </li>
+                    <li>
+                      <a href="#">Fourth link</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Fifth link</a>
+                    </li>
+                    <li>
+                      <a href="#">Sixth link</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Other link</a>
+                    </li>
+                    <li>
+                      <a href="#">Last link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              Premium and Open Source dashboard template with responsive and high quality UI. For Free!
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="row align-items-center flex-row-reverse">
+            <div class="col-auto ml-lg-auto">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <ul class="list-inline list-inline-dots mb-0">
+                    <li class="list-inline-item">
+                      <a href="./docs/index.html">Documentation</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="./faq.html">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-auto">
+                  <a href="https://github.com/tabler/tabler" class="btn btn-outline-primary btn-sm">Source code</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
+              Copyright © 2018
+              <a href=".">Tabler</a>. Theme by
+              <a href="https://codecalm.net" target="_blank">codecalm.net</a> All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+</body>
+
+</html>
